@@ -1,0 +1,4 @@
+:set -package mtl
+:set -package parsec
+:set -package filepath
+:set -package containers
