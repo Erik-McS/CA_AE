@@ -1,0 +1,93 @@
+module TrafficLight where
+import HDL.Hydra.Core.Lib
+import HDL.Hydra.Circuits.Combinational
+
+
+
+
+-- duration limits - they are used to produce a pattern
+-- here -> GGGARRRRA
+limitG, limitA, limitR :: CBit a => [a]
+limitG = [zero, one, one]     -- 3
+limitA = [zero, zero, one]    -- 1
+limitR = [one, zero, zero]    -- 4
+
+
+trafficLight1 reset = (green_s, amber_s, red_s, cnt, limit, done)
+  where
+
+    -- states
+    green_s = dff green_next
+    amber_s = dff amber_next
+    red_s= dff red_next
+
+    -- Green_next = reset OR (green AND NOT done) or (amber AND done AND dir)
+    green_next = or3 reset (and2 green_s (inv done)) (and3 amber_s done dir)
+    -- amber_next = (green and done) or (red and done) or (amber AND NOT done) if reset ->0
+    amber_next = mux1 reset zero (
+        or3 (and2 green_s done) (and2 red_s done) (and2 amber_s (inv done)))
+    -- red_next = (amber and done and NOT dir) or (red AND NOT DONE) if reset ->0
+    red_next = mux1 reset zero (
+        or2 (and3 amber_s done (inv dir)) (and2 red_s (inv done)))
+
+    -- counter - used to repeat states
+    cnt = [c2,c1,c0]
+    [c2,c1,c0] = counter clear [c2,c1,c0]
+
+    -- we need to decide which state between G and R to go after amber -> need memory(dff)
+    dir = dff dirNext
+    -- check if coming from green, if yes, amberN=0
+    tp1 = mux1 doneGreen zero dir
+    -- then select if from Red, amberN=1
+    dirNext = mux1 doneRed one tp1
+    
+    --limit - select which limit to test
+    temp  = mux1w amber_s limitA limitR
+    limit = mux1w green_s limitG temp
+   
+    -- comparison to see if we change states or repeat up to limit
+    -- done = we reached the limit    
+    done = eq3 cnt limit
+    -- intermediate states, used to signal a state change
+    doneGreen = and2 green_s done
+    doneAmber = and2 amber_s done
+    doneRed   = and2 red_s   done
+
+    -- state change - we decide here if we change states or reset.
+    -- as the counter is set to 000 at each state change
+    change = or3 doneGreen doneAmber doneRed
+    -- dff used as i was clearing it in the same cycle.
+    storedChange = dff change
+    clear = or2 storedChange reset
+
+
+{-This is the counter block. used to simulate duration
+start at 0, incremented by one at each cycle. is reset when the state changes, using the clear signal.-}
+-- +1 block
+plusOne :: CBit a => [a] -> [a]
+plusOne [x2,x1,x0] = [p2,p1,p0]
+  where
+    c0 = x0
+    p0 = inv x0
+
+    c1 = and2 c0 x1
+    p1 = xor2 x1 c0
+
+    c2 = and2 c1 x2
+    p2 = xor2 x2 c1
+-- counter block
+counter :: CBit a => a->[a]-> [a]
+counter clear [x2,x1,x0] =  [r2,r1,r0]
+    where
+        [q2,q1,q0] = mux1w clear (plusOne [x2,x1,x0]) [zero,zero,zero]
+        r2 = dff q2
+        r1 = dff q1
+        r0 = dff q0
+
+-- didnt found an equality function. so that added to the circuit here.
+eq3 :: CBit a => [a] -> [a] -> a
+eq3 [a2,a1,a0] [b2,b1,b0] = and2 (and2 e2 e1) e0
+  where
+    e2 = inv (xor2 a2 b2)
+    e1 = inv (xor2 a1 b1)
+    e0 = inv (xor2 a0 b0)
