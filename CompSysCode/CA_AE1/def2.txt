@@ -1,4 +1,4 @@
-module TrafficLight2 where
+module TrafficLight where
 import HDL.Hydra.Core.Lib
 import HDL.Hydra.Circuits.Combinational
 
@@ -91,6 +91,22 @@ trafficLight1 reset = (green_s, amber_s, red_s)
     change = or3 doneGreen doneAmber doneRed
     clear = or2 change reset
 
+
+{-This is the counter block. used to simulate duration
+start at 0, incremented by one at each cycle. is reset when the state changes, using the clear signal.-}
+-- +1 block
+plusOne :: CBit a => [a] -> [a]
+plusOne [x2,x1,x0] = [p2,p1,p0]
+  where
+    c0 = x0
+    p0 = inv x0
+
+    c1 = and2 c0 x1
+    p1 = xor2 x1 c0
+
+    c2 = and2 c1 x2
+    p2 = xor2 x2 c1
+-- counter block
 counter :: CBit a => a -> ([a],[a])
 counter reset = ([x0, x1, x2], [y0, y1, y2])
   where
@@ -102,11 +118,14 @@ counter reset = ([x0, x1, x2], [y0, y1, y2])
     x1 = dff (mux1 reset y1 zero)
     x2 = dff (mux1 reset y2 zero)
 
--- eq 3 bits
+-- didnt found an equality function. so that added to the circuit here.
 eq3 :: CBit a => [a] -> [a] -> a
-eq3 [a0,a1,a2] [b0,b1,b2] =
-  and2 (and2 e0 e1) e2
+eq3 [a2,a1,a0] [b2,b1,b0] = and2 (and2 e2 e1) e0
   where
-    e0 = inv (xor2 a0 b0)
-    e1 = inv (xor2 a1 b1)
     e2 = inv (xor2 a2 b2)
+    e1 = inv (xor2 a1 b1)
+    e0 = inv (xor2 a0 b0)
+
+-- Define a MUX for 3-bit vectors
+mux3w :: CBit a => a -> [a] -> [a] -> [a]
+mux3w sel [x2,x1,x0] [y2,y1,y0] = [mux1 sel x2 y2, mux1 sel x1 y1, mux1 sel x0 y0]

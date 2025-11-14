@@ -1,7 +1,6 @@
-module TrafficLight2 where
+module TrafficLight where
 import HDL.Hydra.Core.Lib
 import HDL.Hydra.Circuits.Combinational
-
 
 
 
@@ -9,10 +8,10 @@ import HDL.Hydra.Circuits.Combinational
 -- here -> GGGARRRRA
 limitG, limitA, limitR :: CBit a => [a]
 limitG = [zero, one, zero]     -- 2
-limitA = [zero, zero, one]    -- 0
-limitR = [zero, one, one]      -- 3
+limitA = [zero, zero, zero]    -- 0
+limitR = [one, one, zero]      -- 3
 
-
+trafficLight1 :: CBit a => a -> (a,a,a)
 trafficLight1 reset = (green_s, amber_s, red_s)
   where
 
@@ -33,22 +32,20 @@ trafficLight1 reset = (green_s, amber_s, red_s)
     red_next = and2 (inv reset) red_next_logic
 
     -- counter - used to repeat states
-    cnt = [c2,c1,c0]
-    [c2,c1,c0] = counter clear [c2,c1,c0]
+    (cnt, nextCnt) = counter clear
 
     -- we need to decide which state between G and R to go after amber -> need memory(dff)
     
     -- 1. Calculate the next desired value (dirNext_comb)
     -- If doneRed=1, dirNext_comb=1. Else if doneGreen=1, dirNext_comb=0. Else, hold 'dir'.
     isDoneRedActive = and2 red_s done 
-    dirNext_comb = mux1 isDoneRedActive one (mux1 doneGreen zero dir)
+    dirNext_comb = mux1 isDoneRedActive (mux1 doneGreen dir zero) one
     
     -- 2. Apply the synchronous reset logic (forces dir=0 if reset=1)
-    dirNext_resettable = mux1 reset zero dirNext_comb
+    dirNext_resettable = mux1 reset dirNext_comb zero
     
     -- 3. The DFF output is based on the resettable input
     dir = dff dirNext_resettable
-    
     
 -- limit is no longer an output/variable, it is just used for clarity
     limitG_hit = and2 green_s (eq3 cnt limitG)
@@ -63,29 +60,6 @@ trafficLight1 reset = (green_s, amber_s, red_s)
     doneAmber = limitA_hit
     doneRed   = limitR_hit
 
-   --limit - select which limit to test
-   -- temp  = mux3w amber_s limitA limitR
-    -- limit = mux3w green_s limitG temp
-
-    [g2, g1, g0] = limitG
-    [a2, a1, a0] = limitA
-    [r2, r1, r0] = limitR
-    
-    -- MUX the [x2, x1, x0] bits for the limit output
-    
-    -- Bit 2 (MSB)
-    temp2 = mux1 amber_s a2 r2
-    l2 = mux1 green_s g2 temp2
-    
-    -- Bit 1
-    temp1 = mux1 amber_s a1 r1
-    l1 = mux1 green_s g1 temp1
-
-    -- Bit 0 (LSB)
-    temp0 = mux1 amber_s a0 r0
-    l0 = mux1 green_s g0 temp0
-    
-    limit = [l2, l1, l0]
     -- state change - we decide here if we change states or reset.
     -- as the counter is set to 000 at each state change
     change = or3 doneGreen doneAmber doneRed
@@ -107,22 +81,26 @@ plusOne [x2,x1,x0] = [p2,p1,p0]
     c2 = and2 c1 x2
     p2 = xor2 x2 c1
 -- counter block
-counter :: CBit a => a->[a]-> [a]
-counter clear [x2,x1,x0] =  [r2,r1,r0]
-    where
-        [q2,q1,q0] = mux3w clear (plusOne [x2,x1,x0]) [zero,zero,zero]
-        r2 = dff q2
-        r1 = dff q1
-        r0 = dff q0
+counter :: CBit a => a -> ([a],[a])
+counter reset = ([x0, x1, x2], [y0, y1, y2])
+  where
+    (c1, y0) = halfAdd x0 one
+    (c2, y1) = halfAdd x1 c1
+    (_,  y2) = halfAdd x2 c2
+
+    x0 = dff (mux1 reset y0 zero)
+    x1 = dff (mux1 reset y1 zero)
+    x2 = dff (mux1 reset y2 zero)
 
 -- didnt found an equality function. so that added to the circuit here.
+-- eq 3 bits
 eq3 :: CBit a => [a] -> [a] -> a
-eq3 [a2,a1,a0] [b2,b1,b0] = and2 (and2 e2 e1) e0
+eq3 [a0,a1,a2] [b0,b1,b2] =
+  and2 (and2 e0 e1) e2
   where
-    e2 = inv (xor2 a2 b2)
-    e1 = inv (xor2 a1 b1)
     e0 = inv (xor2 a0 b0)
+    e1 = inv (xor2 a1 b1)
+    e2 = inv (xor2 a2 b2)
 
--- Define a MUX for 3-bit vectors
-mux3w :: CBit a => a -> [a] -> [a] -> [a]
-mux3w sel [x2,x1,x0] [y2,y1,y0] = [mux1 sel x2 y2, mux1 sel x1 y1, mux1 sel x0 y0]
+    
+    

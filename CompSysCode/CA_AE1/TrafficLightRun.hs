@@ -48,8 +48,13 @@ main = driver $ do
   outputBit "Green_s" green_s
   outputBit "Amber_s" amber_s
   outputBit "Red_s" red_s
---  outputWord "limit" limit
---  outputWord "cnt" cnt
---  outputBit "done" done  
+  --outputWord "cnt" (reverse cnt)
+  --outputBit  "clr" clear
+  --outputBit  "done" done
+  -- outputBit  "dir" dir
+  --outputBit "doneGreen" doneGreen
+  --outputBit "doneRed" doneRed
+  --outputBit "doneAmber" doneAmber
+
 -- Run
   runSimulation
