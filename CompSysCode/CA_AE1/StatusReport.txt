@@ -1,0 +1,21 @@
+course: CA
+exercise: 1
+date: 2025-6-11
+author: Erik McSeveney, 2911240
+As far as i tested, both part are finished, they compile on my side and the Run file produce the results.
+For the first part, i decided to keep to three states(G,A,R), using limits and a counter to produce the correct sequences, as i did not want to
+introduce 9 or more internal states to produce the sequence.
+this led to interesting problems and learning curve, to say the least. the counter is incremented at each cycle. and a 'doneC' flag logic is implemented.
+those flag are updated when the colour limit is reached. for ex, doneRed is true when the counter reach the red limit, and so on.
+i also used a direction flag. this allowed the correct colour to follow the amber state. another challenge, totally self-inflicted, is that convinced myself
+that is a flag is 1, then the first term in mux1 is selected(to much coding logic). this led to a 8h debugging session that led nowhere for a long time.
+
+Unfortunately, as mentioned above, i lost a lot of time for a silly error so my second part is not as elegant/efficient as it could be.
+i used internal states to produce the 3 red sequence. I also decided that the walkRequest button will only have an effect if we are in Green state, but that each press
+of the button would be counted independent of the state it is done.
+
+both parts were tested using different test cases. but i limited them in the Run file. there's two for part one. one is following a normal sequence.
+the other reset during a sequence cycle to see if the sequence reset correctly.
+the test case used for part two uses the walkRequest, with one of them outside the green state.
+
+
