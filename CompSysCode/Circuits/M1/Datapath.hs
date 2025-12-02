@@ -51,7 +51,7 @@ datapath (CtlSig {..}) (SysIO {..}) memdat = dp
     pc = reg n ctl_pc_ld q
     ad = reg n ctl_ad_ld u
 --    rf_d = mux1w ctl_rf_da ir_d ir_sa
-    rf_d = ir_d
+    rf_d = mux1w ctl_ld_idx ir_d ir_sa
 
 -- ALU
     aluOutputs = alu n (ctl_alu_a, ctl_alu_b, ctl_alu_c) x y cc
@@ -71,13 +71,16 @@ datapath (CtlSig {..}) (SysIO {..}) memdat = dp
               (field io_address 12 4)
     -- regfile data input
 
-    p  = mux1w ctl_ld_idx ( -- control signal for loadxi tested
-      mux1w ctl_rf_pc                
-           (mux1w ctl_rf_prod
-             (mux1w ctl_rf_alu memdat r)
-             mul_prod16)
-           pc
-      ) memdat
+-- 1. Selects between ALU result (r) and Memory Data (memdat)
+    -- ctl_rf_alu = 1 for ALU result (e.g., R-R ops, loadxi3 post-increment)
+    -- ctl_rf_alu = 0 for Memory data (e.g., loadxi2 memory read)
+    p_alu_or_mem = mux1w ctl_rf_alu r memdat 
+
+    -- 2. Selects between Multiplier product and the ALU/Mem results
+    p_prod_alu_mem = mux1w ctl_rf_prod mul_prod16 p_alu_or_mem
+
+    -- 3. Final MUX: Selects PC (for JAL) or the lower results.
+    p  = mux1w ctl_rf_pc pc p_prod_alu_mem
 
     q = mux1w ctl_pc_ad r ad        -- input to pc
     u = mux1w ctl_ad_alu memdat r   -- input to ad

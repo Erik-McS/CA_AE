@@ -1,0 +1,3 @@
+load   R1,x[R0]   ; R1 := x
+trap R0,R0,R0
+x     data  23
