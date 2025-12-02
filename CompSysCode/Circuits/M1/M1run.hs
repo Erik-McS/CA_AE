@@ -44,7 +44,7 @@ import Data.Char
 -- object code.  Otherwise it will look in defaultProgramPath
 
 defaultProgramPath :: String
-defaultProgramPath = "../programs/Sigma16/Core/"
+defaultProgramPath = "../Programs/Sigma16/Core/"
 
 ---------------------------------------------------------------------------
 -- Clock cycle

@@ -1,0 +1,23 @@
+cabal-version:   3.16
+name:            Circuits
+version:         0.1.0.0
+license:         NONE
+author:          Erik-McS
+maintainer:      klaelfr60@outlook.com
+build-type:      Simple
+extra-doc-files: CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable Circuits
+    main-is: M1run.hs
+    hs-source-dirs:
+        M1
+        HDL
+    build-depends:
+        base ^>=4.21.0.0,
+        containers,
+        mtl,
+        filepath
+    default-language: Haskell2010

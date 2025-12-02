@@ -1,0 +1,10 @@
+ghc -iM1 -iHDL -package base -package containers -package mtl -package filepath -package parsec -e main M1/M1run.hs
+
+
+/home/erik/CA_AE/CompSysCode/Circuits/M1
+/home/erik/CA_AE/CompSysCode/Programs/Sigma16/Core
+
+
+
+ghc -Wno-warnings -iM1 -iHDL -package base -package containers -package mtl -package filepath -package parsec -e main M1/M1run.hs
+
