@@ -62,6 +62,8 @@ data CtlSig a = CtlSig
    ctl_pc_ad,   -- Input to pc is ad (if 0, r)
    ctl_ad_ld,   -- Load ad register (if 0, remain unchanged)
    ctl_ad_alu,  -- Obtain ad input from alu (if 0, from memory data input)
+-- custom signal for loadxi instruction
+   ctl_ld_idx,      
 
 -- Controls for memory
    ctl_ma_pc,   -- Transmit pc on memory address bus (if 0, transmit addr)

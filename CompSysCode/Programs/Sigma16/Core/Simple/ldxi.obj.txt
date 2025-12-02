@@ -1,0 +1,4 @@
+module   anonymous
+data     f701,0000,c000  ; f7 = loadxi opcode, 01 = R1, 0005 = address, 0000 = placeholder
+data     1234             ; the value in memory at address 0005 (for loadxi to read)
+relocate 0000             ; no relocation needed, addresses fixed

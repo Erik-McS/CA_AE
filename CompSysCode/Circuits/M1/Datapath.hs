@@ -23,6 +23,7 @@ import M1.Interface
 import M1.ALU
 import Register.RegFile
 import Arithmetic.Multiply
+import HDL.Hydra.Circuits.Combinational (mux1w)
 
 datapath
   :: CBit a
@@ -68,11 +69,15 @@ datapath (CtlSig {..}) (SysIO {..}) memdat = dp
     rf_sb = mux1w (and2 io_DMA io_regFetch)
               ir_sb
               (field io_address 12 4)
-    p  = mux1w ctl_rf_pc                -- regfile data input
+    -- regfile data input
+
+    p  = mux1w ctl_ld_idx ( -- control signal for loadxi tested
+      mux1w ctl_rf_pc                
            (mux1w ctl_rf_prod
              (mux1w ctl_rf_alu memdat r)
              mul_prod16)
            pc
+      ) memdat
 
     q = mux1w ctl_pc_ad r ad        -- input to pc
     u = mux1w ctl_ad_alu memdat r   -- input to ad
