@@ -62,9 +62,9 @@ data CtlSig a = CtlSig
    ctl_pc_ad,   -- Input to pc is ad (if 0, r)
    ctl_ad_ld,   -- Load ad register (if 0, remain unchanged)
    ctl_ad_alu,  -- Obtain ad input from alu (if 0, from memory data input)
--- custom signal for loadxi instruction
-   ctl_ld_idx,      
-
+   ctl_ld_idx,  -- custom signal for loadxi     
+   ctl_cf_idx,
+   ctl_af_idx,
 -- Controls for memory
    ctl_ma_pc,   -- Transmit pc on memory address bus (if 0, transmit addr)
    ctl_sto      -- Memory store (if 0, fetch)
@@ -89,7 +89,11 @@ data CtlState a = CtlState
    dff_jump0, st_jump0, dff_jump1, st_jump1, dff_jump2, st_jump2,
    dff_jumpc00, st_jumpc00, dff_jumpc01, st_jumpc01, dff_jumpc02, st_jumpc02,
    dff_jumpc10, st_jumpc10, dff_jumpc11, st_jumpc11, dff_jumpc12, st_jumpc12,
-   dff_jal0, st_jal0, dff_jal1, st_jal1, dff_jal2, st_jal2
+   dff_jal0, st_jal0, dff_jal1, st_jal1, dff_jal2, st_jal2,
+   dff_loadxi0, st_loadxi0,
+   dff_loadxi1, st_loadxi1,
+   dff_loadxi2, st_loadxi2,
+   dff_loadxi3, st_loadxi3
    :: a         -- all control states are bit signals
   }
   
