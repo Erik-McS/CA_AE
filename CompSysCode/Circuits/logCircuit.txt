@@ -19,14 +19,14 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
@@ -42,7 +42,7 @@ Memory
     m_sto = 1  m_addr = 0000  m_real_addr = 0000  m_data = f200  m_out =0000
 
 --------------------------------------------------------------------------------
-Cycle 1.  getStoredInput 0 1 1 0 0 1 3
+Cycle 1.  getStoredInput 0 1 1 0 0 1 5
 Booting
 
 System control
@@ -50,7 +50,7 @@ System control
 
 Input/Output
   io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
-  io_address = 0001  io_data = 0003
+  io_address = 0001  io_data = 0005
 
 Control state
    st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
@@ -60,14 +60,14 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
@@ -80,7 +80,7 @@ Datapath
       ma = 0000    md = 0000
 
 Memory
-    m_sto = 1  m_addr = 0001  m_real_addr = 0001  m_data = 0003  m_out =0000
+    m_sto = 1  m_addr = 0001  m_real_addr = 0001  m_data = 0005  m_out =0000
 
 --------------------------------------------------------------------------------
 Cycle 2.  getStoredInput 0 1 1 0 0 2 61735
@@ -101,14 +101,14 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
@@ -142,14 +142,14 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
@@ -183,14 +183,14 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
@@ -224,14 +224,14 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
@@ -264,14 +264,14 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
@@ -308,14 +308,14 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 1      ctl_sto = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 011  x = 0000  y = 0000  cc = 0000  ir_d = 0
@@ -348,14 +348,14 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 2
@@ -388,14 +388,14 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 1    ctl_ad_ld = 1   ctl_ad_alu = 0
-      ctl_ma_pc = 1      ctl_sto = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 011  x = 0001  y = 0000  cc = 0000  ir_d = 2
@@ -408,7 +408,7 @@ Datapath
       ma = 0001    md = 0000
 
 Memory
-    m_sto = 0  m_addr = 0001  m_real_addr = 0001  m_data = 0000  m_out =0003
+    m_sto = 0  m_addr = 0001  m_real_addr = 0001  m_data = 0000  m_out =0005
 
 --------------------------------------------------------------------------------
 Cycle 10.  Running
@@ -428,34 +428,34 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 1    ctl_rf_ld = 1  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 1   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
-  ALU inputs:   operation = 000  x = 0000  y = 0003  cc = 0000  ir_d = 2
-  ALU outputs:   r = 0003  ccnew = 0003  condcc = 0
+  ALU inputs:   operation = 000  x = 0000  y = 0005  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0005  ccnew = 0003  condcc = 0
 
 Datapath
-      ir = f200    pc = 0002    ad = 0003    cc = 0000
-       a = 0000     b = 0000     x = 0000     y = 0003
-       p = 0002     q = 0003     r = 0003
-      ma = 0003    md = 0000
+      ir = f200    pc = 0002    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0005
+       p = 0002     q = 0005     r = 0005
+      ma = 0005    md = 0000
 
 Memory
-    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0000  m_out =0000
-*** Fetched displacement = 0003
+    m_sto = 0  m_addr = 0005  m_real_addr = 0005  m_data = 0000  m_out =0017
+*** Fetched displacement = 0005
 Register file update: R2 := 0002
 
 ************************************************************************
-Executed instruction:  lea  R2,0003[R0]
+Executed instruction:  lea  R2,0005[R0]
 R2 := 0002 was loaded in cycle 10
-Processor state:    pc = 0002  ir = f200  ad = 0003
+Processor state:    pc = 0002  ir = f200  ad = 0005
 ************************************************************************
 
 --------------------------------------------------------------------------------
@@ -476,21 +476,21 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 1      ctl_sto = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 011  x = 0002  y = 0000  cc = 0000  ir_d = 2
   ALU outputs:   r = 0003  ccnew = 0003  condcc = 0
 
 Datapath
-      ir = f200    pc = 0002    ad = 0000    cc = 0000
+      ir = f200    pc = 0002    ad = 0017    cc = 0000
        a = 0000     b = 0000     x = 0002     y = 0000
        p = 0002     q = 0003     r = 0003
       ma = 0002    md = 0000
@@ -516,27 +516,27 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
-  ALU inputs:   operation = 000  x = 0002  y = 0000  cc = 0000  ir_d = 1
-  ALU outputs:   r = 0002  ccnew = 0003  condcc = 0
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
 
 Datapath
-      ir = f127    pc = 0003    ad = 0000    cc = 0000
-       a = 0002     b = 0000     x = 0002     y = 0000
-       p = 0003     q = 0002     r = 0002
-      ma = 0000    md = 0002
+      ir = f127    pc = 0003    ad = 0017    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0003     q = 0000     r = 0000
+      ma = 0017    md = 0000
 
 Memory
-    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0002  m_out =f200
+    m_sto = 0  m_addr = 0017  m_real_addr = 0017  m_data = 0000  m_out =0000
 
 --------------------------------------------------------------------------------
 Cycle 13.  Running
@@ -556,27 +556,27 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 11   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 1    ctl_ad_ld = 1   ctl_ad_alu = 0
-      ctl_ma_pc = 1      ctl_sto = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 011  x = 0003  y = 0000  cc = 0000  ir_d = 1
   ALU outputs:   r = 0004  ccnew = 0020  condcc = 0
 
 Datapath
-      ir = f127    pc = 0003    ad = 0000    cc = 0000
-       a = 0002     b = 0000     x = 0003     y = 0000
+      ir = f127    pc = 0003    ad = 0017    cc = 0000
+       a = 0000     b = 0000     x = 0003     y = 0000
        p = 0003     q = 0004     r = 0004
-      ma = 0003    md = 0002
+      ma = 0003    md = 0000
 
 Memory
-    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0002  m_out =0000
+    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0000  m_out =0000
 
 --------------------------------------------------------------------------------
 Cycle 14.  Running
@@ -596,27 +596,27 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 11   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
-      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 0
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 1    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 1   ctl_ad_alu = 1
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 1
 
 ALU
-  ALU inputs:   operation = 011  x = 0002  y = 0000  cc = 0000  ir_d = 1
-  ALU outputs:   r = 0003  ccnew = 0003  condcc = 0
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
 
 Datapath
       ir = f127    pc = 0004    ad = 0000    cc = 0000
-       a = 0002     b = 0000     x = 0002     y = 0000
-       p = 0004     q = 0003     r = 0003
-      ma = 0000    md = 0002
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0004     q = 0000     r = 0000
+      ma = 0000    md = 0000
 
 Memory
-    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0002  m_out =f200
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f200
 
 --------------------------------------------------------------------------------
 Cycle 15.  Running
@@ -636,27 +636,27 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 11   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
-  ALU inputs:   operation = 000  x = 0002  y = 0000  cc = 0000  ir_d = 1
-  ALU outputs:   r = 0002  ccnew = 0003  condcc = 0
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
 
 Datapath
-      ir = f127    pc = 0004    ad = 0003    cc = 0000
-       a = 0002     b = 0000     x = 0002     y = 0000
-       p = 0004     q = 0002     r = 0002
-      ma = 0003    md = 0002
+      ir = f127    pc = 0004    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0004     q = 0000     r = 0000
+      ma = 0000    md = 0000
 
 Memory
-    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0002  m_out =0000
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f200
 Register file update: R1 := 0004
 
 --------------------------------------------------------------------------------
@@ -677,34 +677,34 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 11
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 0
-       ctl_y_ad = 1    ctl_rf_ld = 1  ctl_rf_ldcc = 0    ctl_rf_pc = 0
-      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 1
 
 ALU
-  ALU inputs:   operation = 011  x = 0004  y = 0003  cc = 0000  ir_d = 1
+  ALU inputs:   operation = 011  x = 0004  y = 0000  cc = 0000  ir_d = 1
   ALU outputs:   r = 0005  ccnew = 0003  condcc = 0
 
 Datapath
-      ir = f127    pc = 0004    ad = 0003    cc = 0000
-       a = 0004     b = 0000     x = 0004     y = 0003
+      ir = f127    pc = 0004    ad = 0000    cc = 0000
+       a = 0004     b = 0000     x = 0004     y = 0000
        p = 0004     q = 0005     r = 0005
-      ma = 0003    md = 0004
+      ma = 0000    md = 0004
 
 Memory
-    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0004  m_out =0000
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0004  m_out =f200
 Register file update: R1 := 0004
 
 ************************************************************************
-Executed instruction:  nop  R1,0003[R2]
+Executed instruction:  loadxi  R1,0005[R2]
 R1 := 0004 was loaded in cycle 15
 R1 := 0004 was loaded in cycle 16
-Processor state:    pc = 0004  ir = f127  ad = 0003
+Processor state:    pc = 0004  ir = f127  ad = 0000
 ************************************************************************
 
 --------------------------------------------------------------------------------
@@ -725,21 +725,21 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 1      ctl_sto = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 011  x = 0004  y = 0000  cc = 0000  ir_d = 1
   ALU outputs:   r = 0005  ccnew = 0003  condcc = 0
 
 Datapath
-      ir = f127    pc = 0004    ad = 0003    cc = 0000
+      ir = f127    pc = 0004    ad = 0000    cc = 0000
        a = 0004     b = 0000     x = 0004     y = 0000
        p = 0004     q = 0005     r = 0005
       ma = 0004    md = 0004
@@ -765,27 +765,27 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
   ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
 
 Datapath
-      ir = c000    pc = 0005    ad = 0003    cc = 0000
+      ir = c000    pc = 0005    ad = 0000    cc = 0000
        a = 0000     b = 0000     x = 0000     y = 0000
        p = 0005     q = 0000     r = 0000
-      ma = 0003    md = 0000
+      ma = 0000    md = 0000
 
 Memory
-    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0000  m_out =0000
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f200
 
 --------------------------------------------------------------------------------
 Cycle 19.  Running
@@ -805,31 +805,31 @@ Control state
       st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
      st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
      st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
-        st_jal2 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
 
 Control signals
       ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
        ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
       ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
       ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
-      ctl_ma_pc = 0      ctl_sto = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0
 
 ALU
   ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
   ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
 
 Datapath
-      ir = c000    pc = 0005    ad = 0003    cc = 0000
+      ir = c000    pc = 0005    ad = 0000    cc = 0000
        a = 0000     b = 0000     x = 0000     y = 0000
        p = 0005     q = 0000     r = 0000
-      ma = 0003    md = 0000
+      ma = 0000    md = 0000
 
 Memory
-    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0000  m_out =0000
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f200
 
 ************************************************************************
 Executed instruction:  trap  R0,R0,R0
-Processor state:    pc = 0005  ir = c000  ad = 0003
+Processor state:    pc = 0005  ir = c000  ad = 0000
 ************************************************************************
 
 System simulation driver is handling a trap request

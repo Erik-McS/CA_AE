@@ -50,9 +50,8 @@ datapath (CtlSig {..}) (SysIO {..}) memdat = dp
     ir = reg n ctl_ir_ld memdat
     pc = reg n ctl_pc_ld q
     ad = reg n ctl_ad_ld u
---    rf_d = mux1w ctl_rf_da ir_d ir_sa
-    rf_d = mux1w ctl_ld_idx ir_d ir_sa
-
+    
+    rf_d = mux1w ctl_cf_idx ir_sa ir_d
 -- ALU
     aluOutputs = alu n (ctl_alu_a, ctl_alu_b, ctl_alu_c) x y cc
     (r,ccnew) = aluOutputs
@@ -65,21 +64,19 @@ datapath (CtlSig {..}) (SysIO {..}) memdat = dp
 -- Internal processor signals
     x = mux1w ctl_x_pc a pc             -- alu input 1
     y = mux1w ctl_y_ad b ad             -- alu input 2
-    rf_sa = mux1w ctl_rf_sd ir_sa ir_d  -- a = reg[rf_sa]
+
+    rf_sa = mux1w ctl_af_idx ir_sa (mux1w ctl_rf_sd ir_sa ir_d)
+
     rf_sb = mux1w (and2 io_DMA io_regFetch)
               ir_sb
               (field io_address 12 4)
     -- regfile data input
 
--- 1. Selects between ALU result (r) and Memory Data (memdat)
-    -- ctl_rf_alu = 1 for ALU result (e.g., R-R ops, loadxi3 post-increment)
-    -- ctl_rf_alu = 0 for Memory data (e.g., loadxi2 memory read)
-    p_alu_or_mem = mux1w ctl_rf_alu r memdat 
-
-    -- 2. Selects between Multiplier product and the ALU/Mem results
+    --Selects between ALU result (r) and Memory Data (memdat)
+    p_alu_or_mem = mux1w ctl_rf_alu memdat r
+    -- Selects between Multiplier product and the ALU/Mem results
     p_prod_alu_mem = mux1w ctl_rf_prod mul_prod16 p_alu_or_mem
-
-    -- 3. Final MUX: Selects PC (for JAL) or the lower results.
+    -- Final MUX: Selects PC (for JAL) or the lower results.
     p  = mux1w ctl_rf_pc pc p_prod_alu_mem
 
     q = mux1w ctl_pc_ad r ad        -- input to pc

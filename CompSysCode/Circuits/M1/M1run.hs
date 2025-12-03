@@ -35,6 +35,7 @@ import Control.Monad.State
 import Control.Exception
 import qualified Data.Map as Map
 import Data.Char
+import M1.Interface (CtlSig(ctl_ld_idx))
 
 ---------------------------------------------------------------------------
 -- Configuration
@@ -450,6 +451,10 @@ simulateCircuit = do
     , string "      st_jal1 = ", bit dff_jal1, bit st_jal1
     , string "\n  "
     , string "      st_jal2 = ", bit dff_jal2, bit st_jal2
+    , string "   st_loadxi0 = ", bit dff_loadxi0, bit st_loadxi0
+    , string "   st_loadxi1 = ", bit dff_loadxi1, bit st_loadxi1
+    , string "   st_loadxi2 = ", bit dff_loadxi2, bit st_loadxi2
+    , string "   st_loadxi3 = ", bit dff_loadxi3, bit st_loadxi3
 
     , string "\n\nControl signals\n  "
     , string "    ctl_alu_a = ", bit ctl_alu_a
@@ -474,7 +479,8 @@ simulateCircuit = do
     , string "\n  "
     , string "    ctl_ma_pc = ", bit ctl_ma_pc
     , string "      ctl_sto = ", bit ctl_sto
-
+    , string "   ctl_ld_idx = ", bit ctl_ld_idx
+    
     , string "\n\nALU\n"
     , string "  ALU inputs: "
     , string "  operation = ", bit ctl_alu_a, bit ctl_alu_b, bit ctl_alu_c
@@ -1149,7 +1155,7 @@ findMnemonic [opfield, bfield] =
          "trap", "nop", "expandExp", "expandRX"]
       mnemonics_RX =
         ["lea",    "load",   "store", "jump",
-         "jumpc0", "jumpc1", "jal",   "nop",
+         "jumpc0", "jumpc1", "jal",   "loadxi",
          "nop",    "nop",    "nop",   "nop",
          "nop",    "nop",    "nop",   "nop"]
   in if op==15
