@@ -1,0 +1,67 @@
+course: CA
+exercise: 2
+date: 2023-05-12
+author: Erik McSeveney, 2911240
+
+Part 1
+
+unfortunately, i cannot get the new instruction to behave as requested.
+
+first, i deined a new ctl_ld_idx signals that was supposed to help with the registers getting the one used for index to increment:
+      -- custom signals for loadxi
+      ctl_ld_idx  = orw [st_loadxi1,st_loadxi3]
+      ctl_af_idx  = orw [st_loadxi1,st_loadxi3]
+      ctl_cf_idx  = orw[st_loadxi3]
+
+the initila logic was for the instruction was :
+        7 -> --loadxi instruction
+            st_loadxi0: ad := mem[pc], pc++
+            assert [ctl_ma_pc, ctl_ad_ld, ctl_x_pc, ctl_alu_abc=011, ctl_pc_ld]
+            st_loadxi1: ad := reg[ir_sa] + ad
+                assert [ctl_y_ad, ctl_alu_abc=000, ctl_ad_ld, ctl_ad_alu]
+            st_loadxi2: reg[ir_d] := mem[ad]
+                assert [ctl_ma_ad, ctl_rf_ld]
+            st_loadxi3: reg[ir_sa] := reg[ir_sa] + 1
+                assert [ctl_rf_ld, ctl_ld_idx, ctl_alu_abc=000]
+
+and the states:
+
+-- loadxi control states
+      dff_loadxi0 = dff(or2 (pRX!!7) (and2 dff_loadxi0 io_DMA))
+      st_loadxi0  = and2 dff_loadxi0 cpu
+      dff_loadxi1 = dff (or2 st_loadxi0 (and2 dff_loadxi1 io_DMA))
+      st_loadxi1  = and2 dff_loadxi1 cpu
+      dff_loadxi2 = dff (or2 st_loadxi1 (and2 dff_loadxi2 io_DMA))
+      st_loadxi2  = and2 dff_loadxi2 cpu
+      dff_loadxi3 = dff (or2 st_loadxi2 (and2 dff_loadxi3 io_DMA))
+      st_loadxi3  = and2 dff_loadxi3 cpu
+
+also added in the generate signals, excerpt:
+
+ctl_alu_b   = orw [st_instr_fet,st_load0,st_loadxi0,st_store0,st_lea0,
+                         st_jump0, st_jumpc00, st_jumpc10, st_jal0,st_loadxi3]
+      ctl_alu_c   = orw [st_instr_fet,st_load0,st_loadxi0,st_store0,st_lea0,
+                         st_jump0, st_jumpc00, st_jumpc10,
+                         st_sub,st_jumpc00,st_jal0,st_loadxi3]
+      ctl_ir_ld   = orw [st_instr_fet]
+      ctl_pc_ld   = orw [st_instr_fet, st_lea0, st_load0,st_loadxi0, st_store0,
+
+several attempts were made to get the wiring correctly in the Datapath, none really worked. the lastest was:
+    --Selects between ALU result (r) and Memory Data (memdat)
+    p_alu_or_mem = mux1w ctl_rf_alu memdat r
+    -- Selects between Multiplier product and the ALU/Mem results
+    p_prod_alu_mem = mux1w ctl_rf_prod mul_prod16 p_alu_or_mem
+    -- Final MUX: Selects PC (for JAL) or the lower results.
+    p  = mux1w ctl_rf_pc pc p_prod_alu_mem
+
+in the traces, the states did moved correctly ( cycle 13-16 in the logCircuits.txt provided too.), for ex :
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 11   st_loadxi3 = 00
+
+the instruction testing .obj was:
+module   undefined
+data     f200,0005,f127,0000,c000,0017
+relocate 0003
+
+but despite several hours of debugging, it's not working. i seems to get stuck finding the value 4 in both R1 and R2 at the end of the run.
+
+

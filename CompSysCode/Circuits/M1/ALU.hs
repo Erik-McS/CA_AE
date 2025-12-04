@@ -13,6 +13,7 @@ module M1.ALU where
 
 import HDL.Hydra.Core.Lib
 import HDL.Hydra.Circuits.Combinational
+import Mux.Mux1wRun (mux1wRun)
 
 {- The ALU calculates a function of word inputs x and y (which are
 usually the contents of two registers) and the condition code cc (the
@@ -70,7 +71,8 @@ operator indexes bits from the left.)
 |         9 | Stack underflow | s      |
 -}
 
-alu n (alua,alub,aluc) x y cc = (result, ccnew)
+alu :: Bit a => Int -> (a, a, a, a) -> [a] -> [a] -> p -> ([a], [a])
+alu n (alua,alub,aluc, cLogic) x y cc = (result, ccnew)
   where
 
 -- Constant words    
@@ -87,8 +89,8 @@ alu n (alua,alub,aluc) x y cc = (result, ccnew)
 
 -- The adder    
     xy = bitslice2 x' y'
-    (carry,result) = rippleAdd negating xy
-    msb = result!!0 --- most significant bit of result
+    (carry,resulta) = rippleAdd negating xy
+    msb = resulta!!0 --- most significant bit of result
 
 -- Binary comparison    
     (lt,eq,gt) = rippleCmp xy
@@ -101,14 +103,14 @@ alu n (alua,alub,aluc) x y cc = (result, ccnew)
 -- Carry and overflow
     mx = x' !! 15      -- sign bit of first operand
     my = y' !! 15      -- sign bit of second operand
-    mr = result !! 15  -- sign bit of result
+    mr = resulta !! 15  -- sign bit of result
     intovfl = or2 (and3 mx my (inv mr))
                   (and3 (inv mx) (inv my) mr)
     natovfl = carry
     noOvfl  = inv intovfl
 
 -- Relation of integer result to 0
-    any1 = orw result                  -- 1 if any bit in result is 1
+    any1 = orw resulta                  -- 1 if any bit in result is 1
     neg  = and3 noOvfl any1 msb        -- ok, result < 0
     z    = and2 noOvfl (inv any1)      -- ok, result is 0
     pos  = and3 noOvfl any1 (inv msb)  -- ok, result > 0
@@ -124,6 +126,28 @@ alu n (alua,alub,aluc) x y cc = (result, ccnew)
     feq      = mux1 arith eq    z
     fgt      = mux1 arith gt    pos
     fgt_tc   = mux1 arith gt_tc pos
+
+    -- Bitwise logic results
+    r_and = zipWith and2 x y
+    r_or  = zipWith or2 x y
+    r_xor = zipWith xor2 x y
+    r_inv = map inv x
+
+    -- 4-way word mux using two select bits
+    mux4w :: Bit a => (a,a) -> [a] -> [a] -> [a] -> [a] -> [a]
+    mux4w (s1,s0) w0 w1 w2 w3 =
+        let t0 = mux1w s0 w0 w1  -- if s0=0 pick w0 else w1
+            t1 = mux1w s0 w2 w3  -- if s0=0 pick w2 else w3
+        in  mux1w s1 t0 t1       -- if s1=0 pick t0 else t1
+    --   alub  aluc   Operation
+--   -------------------------
+--    0   0   r_inv     (bitwise NOT x)
+--    0   1   r_and     (x AND y)
+--    1   0   r_or      (x OR y)
+--    1   1   r_xor     (x XOR y)        
+    result_logic = mux4w (alub, aluc) r_inv r_and r_or r_xor
+
+    result = mux1w cLogic resulta result_logic 
 
 -- Generate the condition code
     ccnew = [ zero,   zero,     zero,     zero,    -- bit 15 14 13 12

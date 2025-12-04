@@ -53,7 +53,7 @@ datapath (CtlSig {..}) (SysIO {..}) memdat = dp
     
     rf_d = mux1w ctl_cf_idx ir_sa ir_d
 -- ALU
-    aluOutputs = alu n (ctl_alu_a, ctl_alu_b, ctl_alu_c) x y cc
+    aluOutputs = alu n (ctl_alu_a, ctl_alu_b, ctl_alu_c,ctl_Logic) x y cc -- adding Logic signal for part 2
     (r,ccnew) = aluOutputs
 
 -- Multiplier functional unit
@@ -70,14 +70,22 @@ datapath (CtlSig {..}) (SysIO {..}) memdat = dp
     rf_sb = mux1w (and2 io_DMA io_regFetch)
               ir_sb
               (field io_address 12 4)
-    -- regfile data input
 
+{-
+this was in part 1, but did not work:
     --Selects between ALU result (r) and Memory Data (memdat)
     p_alu_or_mem = mux1w ctl_rf_alu memdat r
     -- Selects between Multiplier product and the ALU/Mem results
     p_prod_alu_mem = mux1w ctl_rf_prod mul_prod16 p_alu_or_mem
     -- Final MUX: Selects PC (for JAL) or the lower results.
     p  = mux1w ctl_rf_pc pc p_prod_alu_mem
+
+-}
+    p  = mux1w ctl_rf_pc                -- regfile data input
+           (mux1w ctl_rf_prod
+             (mux1w ctl_rf_alu memdat r)
+             mul_prod16)
+           pc
 
     q = mux1w ctl_pc_ad r ad        -- input to pc
     u = mux1w ctl_ad_alu memdat r   -- input to ad

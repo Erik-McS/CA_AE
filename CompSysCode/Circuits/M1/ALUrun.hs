@@ -11,6 +11,7 @@
 module Main where
 import HDL.Hydra.Core.Lib
 import M1.ALU
+import HDL.Hydra.Core.Lib (inputBit)
 
 {-
 
@@ -41,31 +42,23 @@ Condition code
 -}
 
 alu_input1 =
---   a  b  c     x      y   cc     Operation  Result
+--   a  b  c  g     x      y   cc     Operation  Result
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  [ "0  0  0     14     15   0"    --   x+y       29
-  , "0  0  0    125    590   0"    --   x+y      715
-  , "0  0  0     49     15   0"    --   x+y       64
-  , "0  0  0     21    -19   0"    --   x+y        2
-  , "0  0  0     21    -35   0"    --   x+y      -14
-  , "0  0  0   -350     75   0"    --   x+y     -275
-  , "0  0  0   -420    -90   0"    --   x+y     -510
-
-  , "0  0  1     49     15   0"    --   x-y       34
-  , "0  0  1     15     49   0"    --   x-y      -34
-
-  , "0  1  0     39      0   0"    --   -x       -39
-  , "0  1  0     25     70   0"    --   -x       -25
-
-  , "0  1  1     17      0   0"    --   x+1       18
-  , "0  1  1    193     52   0"    --   x+1      194
-
-  , "1  0  0      5      5   0"    --  cmp     cc = 0004  =
-  , "1  0  0      5      7   0"    --  cmp     cc = 0018  <L
-  , "1  0  0      7      5   0"    --  cmp     cc = 0003  >G
-  , "1  0  0      5     -1   0"    --  cmp     cc = 0009  >L
-  , "1  0  0     -1      5   0"    --  cmp     cc = 0012  <G
-
+  [ "0  0  0  0  14     15   0"    --   x+y       29
+  , "0  0  0  0  125    590   0"    --   x+y      715
+  , "0  0  0  1  0xffff  0x0000       0"    --   inv x      0x0000
+  , "0  0  0  1  0x0000  0xffff       0"    --   inv x      oxffff
+  , "0  0  1  1  0xffff  0xffff       0"    --   and x y      oxffff
+  , "0  0  1  1  0xffff  0x0000       0"    --   and x y      ox0000
+  , "0  0  1  1  0x0000  0xffff       0"    --   and x y      ox0000
+  , "0  0  1  1  0x0000  0x0000       0"    --   and x y      ox0000
+  , "0  1  0  1  0xffff  0x0000       0"    --   or x y      oxffff
+  , "0  1  0  1  0x0000  0xffff       0"    --   or x y      oxffff
+  , "0  1  0  1  0x0000  0x0000       0"    --   or x y      ox0000
+  , "0  1  0  1  0xffff  0xffff       0"    --   or x y      oxffff
+  , "0  1  1  1  0xffff  0x0000       0"    --   xor x y      oxffff
+  , "0  1  1  1  0x0000  0xffff       0"    --   xor x y      oxffff
+  , "0  1  1  1  0xffff  0xffff       0"    --   xor x y      ox0000
    ]
 
 
@@ -85,16 +78,17 @@ main = driver  $ do
   a <- inputBit "a"
   b <- inputBit "b"
   c <- inputBit "c"
+  g <- inputBit "g"
   x <- inputWord "x" n
   y <- inputWord "y" n
   cc <- inputWord "cc" n
 
 -- Circuit  
-  let (r,ccnew) = alu n (a,b,c) x y cc
+  let (r,ccnew) = alu n (a,b,c,g) x y cc
 
   format
       [string "Inputs:  ",
-       string " abc = ", bit a, bit b, bit c,
+       string " abcg = ", bit a, bit b, bit c,bit g,
        string "\n         x = ", bits x, string " $", binhex x,
        string " (bin:", bindec 5 x, string ")",
        string " (tc: ", bitstc 6 x, string ")",

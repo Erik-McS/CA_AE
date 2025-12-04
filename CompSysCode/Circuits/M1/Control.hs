@@ -127,13 +127,13 @@ repeat forever
 
         7 -> --loadxi instruction
             st_loadxi0: ad := mem[pc], pc++
-                assert [ctl_ma_pc, ctl_ad_ld, ctl_x_pc, ctl_alu_abc=011, ctl_pc_ld]
+            assert [ctl_ma_pc, ctl_ad_ld, ctl_x_pc, ctl_alu_abc=011, ctl_pc_ld]
             st_loadxi1: ad := reg[ir_sa] + ad
                 assert [ctl_y_ad, ctl_alu_abc=000, ctl_ad_ld, ctl_ad_alu]
             st_loadxi2: reg[ir_d] := mem[ad]
-                assert [ctl_rf_ld, ctl_ld_idx]
+                assert [ctl_ma_ad, ctl_rf_ld]
             st_loadxi3: reg[ir_sa] := reg[ir_sa] + 1
-                assert [ctl_rf_ld, ctl_ld_idx]
+                assert [ctl_rf_ld, ctl_ld_idx, ctl_alu_abc=000]
 
 
 -- The remaining opcodes are used in the full Sigma16 architecture,
@@ -180,6 +180,7 @@ control reset ir cc mul_rdy  (SysIO {..}) = (ctlstate,start,ctlsigs)
       start = orw -- start on reset or last instruction state
         [reset,
          st_add, st_sub,
+         st_inv, st_and, st_or, st_xor, -- new logic ops
          st_mul2,
          st_cmp, st_trap0,
          st_lea1, st_load2, st_store2, st_jump2,
@@ -265,6 +266,7 @@ control reset ir cc mul_rdy  (SysIO {..}) = (ctlstate,start,ctlsigs)
       
       dff_sub   = dff (or2 (pRRR!!1) (and2 dff_sub io_DMA))
       st_sub    = and2 dff_sub cpu
+
 -- adding control states for logic operators
       dff_inv = dff (or2 (pRRR!!5) (and2 dff_inv io_DMA))
       st_inv  = and2 dff_inv cpu
@@ -308,12 +310,14 @@ control reset ir cc mul_rdy  (SysIO {..}) = (ctlstate,start,ctlsigs)
       st_trap0  = and2 dff_trap0 cpu
 
 -- Generate control signals
-      ctl_rf_ld   = orw [st_load2,st_lea1,st_add,st_sub,st_loadxi2,st_loadxi3,
+      ctl_rf_ld   = orw [st_load2,st_lea1,st_add,st_sub,st_loadxi2,st_loadxi3, -- loadxi added
+                         st_inv, st_and, st_or, st_xor,
                          st_jal2, st_mul2]
 
-      ctl_rf_ldcc = orw [st_cmp, st_add, st_sub]
+      ctl_rf_ldcc = orw [st_cmp, st_add, st_sub,
+                          st_inv, st_and, st_or, st_xor] -- logic alu added
       ctl_rf_pc   = orw [st_jal2]
-      ctl_rf_alu  = orw [st_lea1,st_add,st_sub]
+      ctl_rf_alu  = orw [st_lea1,st_add,st_sub,st_inv, st_and, st_or, st_xor] -- logic alu added
 
       ctl_rf_sd   = orw [st_store2,st_jumpc00]
       ctl_mul_start = orw [st_mul0]
@@ -321,10 +325,10 @@ control reset ir cc mul_rdy  (SysIO {..}) = (ctlstate,start,ctlsigs)
 
       ctl_alu_a=orw [st_cmp]
       ctl_alu_b   = orw [st_instr_fet,st_load0,st_loadxi0,st_store0,st_lea0,
-                         st_jump0, st_jumpc00, st_jumpc10, st_jal0,st_loadxi3]
+                         st_jump0, st_jumpc00, st_jumpc10, st_jal0,st_loadxi3] -- loadxi added
       ctl_alu_c   = orw [st_instr_fet,st_load0,st_loadxi0,st_store0,st_lea0,
                          st_jump0, st_jumpc00, st_jumpc10,
-                         st_sub,st_jumpc00,st_jal0,st_loadxi3]
+                         st_sub,st_jumpc00,st_jal0,st_loadxi3] -- loadxi added
       ctl_ir_ld   = orw [st_instr_fet]
       ctl_pc_ld   = orw [st_instr_fet, st_lea0, st_load0,st_loadxi0, st_store0,
                            st_jump0, st_jump2,
@@ -332,7 +336,7 @@ control reset ir cc mul_rdy  (SysIO {..}) = (ctlstate,start,ctlsigs)
                            st_jumpc10, and2 condcc st_jumpc12,
                            st_jal0, st_jal2]
       ctl_pc_ad   = orw [st_jump2, st_jumpc02, st_jumpc12, st_jal2]
-      ctl_ad_ld   = orw [st_load0,st_load1,st_loadxi0,st_loadxi1,st_lea0,st_lea1,st_store0,
+      ctl_ad_ld   = orw [st_load0,st_load1,st_loadxi0,st_loadxi1,st_lea0,st_lea1,st_store0, -- loadxi added
                          st_store1,st_jumpc00,st_jumpc01,
                          st_jumpc10,st_jumpc11,st_jump0,st_jump1,
                          st_jal0,st_jal1]
@@ -341,13 +345,16 @@ control reset ir cc mul_rdy  (SysIO {..}) = (ctlstate,start,ctlsigs)
                            st_jumpc10,st_jumpc00,st_jump0,st_jal0]
       ctl_x_pc    = orw [st_instr_fet,st_load0,st_loadxi0,st_lea0,st_store0,
                            st_jumpc10,st_jumpc00,st_jump0,st_jal0]
-      ctl_y_ad    = orw [st_load1,st_loadxi1,st_store1,st_lea1,st_jumpc11,
+      ctl_y_ad    = orw [st_load1,st_loadxi1,st_store1,st_lea1,st_jumpc11, -- loadxi added
                          st_jumpc01,st_jump1,st_jal1]
       ctl_sto     = orw [st_store2]
       -- custom signals for loadxi
       ctl_ld_idx  = orw [st_loadxi1,st_loadxi3]
       ctl_af_idx  = orw [st_loadxi1,st_loadxi3]
       ctl_cf_idx  = orw[st_loadxi3]
+
+      -- custom signals for the logic ALU
+      ctl_Logic = orw [st_inv, st_and, st_or, st_xor]
 
 -- Record of control states and signals
       ctlstate = CtlState {..}
