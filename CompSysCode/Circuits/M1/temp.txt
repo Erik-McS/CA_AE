@@ -1,0 +1,5 @@
+    -- Bitwise logic results
+    r_and = zipWith and2 x y
+    r_or  = zipWith or2 x y
+    r_xor = zipWith xor2 x y
+    r_inv = map inv x

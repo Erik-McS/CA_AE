@@ -455,7 +455,8 @@ simulateCircuit = do
     , string "   st_loadxi1 = ", bit dff_loadxi1, bit st_loadxi1
     , string "   st_loadxi2 = ", bit dff_loadxi2, bit st_loadxi2
     , string "   st_loadxi3 = ", bit dff_loadxi3, bit st_loadxi3
-
+    , string "\n  "
+    --, string "   st_logic = ", bit dff_loadxi3, bit st_loadxi3
     , string "\n\nControl signals\n  "
     , string "    ctl_alu_a = ", bit ctl_alu_a
     , string "    ctl_alu_b = ", bit ctl_alu_b
@@ -480,7 +481,7 @@ simulateCircuit = do
     , string "    ctl_ma_pc = ", bit ctl_ma_pc
     , string "      ctl_sto = ", bit ctl_sto
     , string "   ctl_ld_idx = ", bit ctl_ld_idx
-    
+    , string "   ctl_Logic = ", bit ctl_Logic
     , string "\n\nALU\n"
     , string "  ALU inputs: "
     , string "  operation = ", bit ctl_alu_a, bit ctl_alu_b, bit ctl_alu_c
@@ -1150,8 +1151,8 @@ findMnemonic [opfield, bfield] =
       b = intsInt bfield
       mnemonics_RRR =
         ["add", "sub", "mul", "div",
-         "cmp", "nop", "nop", "nop",
-         "nop", "nop", "nop", "nop",
+         "cmp", "inv", "and", "or",
+         "xor", "nop", "nop", "nop",
          "trap", "nop", "expandExp", "expandRX"]
       mnemonics_RX =
         ["lea",    "load",   "store", "jump",

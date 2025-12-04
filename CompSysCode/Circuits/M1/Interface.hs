@@ -42,6 +42,7 @@ data CtlSig a = CtlSig
    ctl_alu_a,   -- 3-bit alu operation code
    ctl_alu_b,   --   "
    ctl_alu_c,   --   "
+   ctl_Logic, -- 1 if a Logic Operation (INV, AND, OR, XOR)
    ctl_x_pc,    -- Transmit pc on x (if 0, transmit reg[sa])
    ctl_y_ad,    -- Transmit ad on y (if 0, transmit reg[sb])
 
@@ -75,6 +76,7 @@ data CtlState a = CtlState
   {dff_instr_fet, st_instr_fet,
    dff_dispatch, st_dispatch,
    dff_add, st_add,
+   st_inv, st_and, st_or, st_xor,
    dff_sub, st_sub,
    dff_mul0, st_mul0,
    dff_mul1, st_mul1,
