@@ -309,8 +309,7 @@ control reset ir cc mul_rdy  (SysIO {..}) = (ctlstate,start,ctlsigs)
       dff_trap0 = dff (or2 (pRRR!!12) (and2 dff_trap0 io_DMA))
       st_trap0  = and2 dff_trap0 cpu
 
--- Generate control signals
-      ctl_rf_ld   = orw [st_load2,st_lea1,st_add,st_sub,st_loadxi2,st_loadxi3, -- loadxi added
+      ctl_rf_ld   = orw [st_load2,st_lea1,st_add,st_sub,st_loadxi2,st_loadxi3, -- loadxi/alu added
                          st_inv, st_and, st_or, st_xor,
                          st_jal2, st_mul2]
 
@@ -325,10 +324,10 @@ control reset ir cc mul_rdy  (SysIO {..}) = (ctlstate,start,ctlsigs)
 
       ctl_alu_a=orw [st_cmp]
       ctl_alu_b   = orw [st_instr_fet,st_load0,st_loadxi0,st_store0,st_lea0,
-                         st_jump0, st_jumpc00, st_jumpc10, st_jal0,st_loadxi3] -- loadxi added
+                         st_jump0, st_jumpc00, st_jumpc10, st_jal0,st_loadxi3,st_or, st_xor] -- loadxi/ALU added
       ctl_alu_c   = orw [st_instr_fet,st_load0,st_loadxi0,st_store0,st_lea0,
                          st_jump0, st_jumpc00, st_jumpc10,
-                         st_sub,st_jumpc00,st_jal0,st_loadxi3] -- loadxi added
+                         st_sub,st_jumpc00,st_jal0,st_loadxi3,st_and, st_xor] -- loadxi/ALU added
       ctl_ir_ld   = orw [st_instr_fet]
       ctl_pc_ld   = orw [st_instr_fet, st_lea0, st_load0,st_loadxi0, st_store0,
                            st_jump0, st_jump2,

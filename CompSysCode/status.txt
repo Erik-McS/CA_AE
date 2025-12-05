@@ -64,4 +64,102 @@ relocate 0003
 
 but despite several hours of debugging, it's not working. i seems to get stuck finding the value 4 in both R1 and R2 at the end of the run.
 
+Part 2
+
+again, i was not able to fully implement the instructions, although i managed to get the alu working as intended.
+
+edited to use a control signal:
+alu :: Bit a => Int -> (a, a, a, a) -> [a] -> [a] -> p -> ([a], [a])
+alu n (alua,alub,aluc, cLogic) x y cc = (result, ccnew)
+
+using alua and alub to select the instruction:
+
+    --   alub  aluc   Operation
+--   -------------------------
+--    0   0   r_inv     (bitwise NOT x)
+--    0   1   r_and     (x AND y)
+--    1   0   r_or      (x OR y)
+--    1   1   r_xor     (x XOR y)  
+
+i included a modified version of ALUrun.hs to demonstrate the switch between arithmetic and logic, giving this trace(just an exemple,
+the ALUrun test all logic cases):
+
+cycle 1 : add (0000) -> cycle 2 : inv(0001), the last bit g is for the logic control signal
+
+----------------------------------------------------------------------
+Cycle 1
+Inputs:   abcg = 0000
+         x = 0000000001111101 $007d (bin:  125) (tc:    125)
+         y = 0000001001001110 $024e (bin:  590) (tc:    590)
+       Outputs:  
+         r = 0000001011001011  715  $02cb
+         ccnew = 0000000000000011 $0003
+----------------------------------------------------------------------
+Cycle 2
+Inputs:   abcg = 0001
+         x = 1111111111111111 $ffff (bin:65535) (tc:     -1)
+         y = 0000000000000000 $0000 (bin:    0) (tc:      0)
+       Outputs:  
+         r = 0000000000000000    0  $0000
+         ccnew = 0000000000010000 $0010
+----------------------------------------------------------------------
+
+i did not managed to get a working integration in the circuit though.
+
+the interface was modified to add the needed ctl_Logic signal:
+
+Data CtlSig a = CtlSig
+  {
+-- Controls for system
+    cpu,        -- indicates dff for state generates state controls
+    condcc,
+
+-- Controls for ALU
+   ctl_alu_a,   -- 3-bit alu operation code
+   ctl_alu_b,   --   "
+   ctl_alu_c,   --   "
+   ctl_Logic, -- 1 if a Logic Operation (INV, AND, OR, XOR)
+
+and states:
+
+data CtlState a = CtlState
+  {dff_instr_fet, st_instr_fet,
+   dff_dispatch, st_dispatch,
+   dff_add, st_add,
+   st_inv, st_and, st_or, st_xor,
+
+Datapath edited with the new alu shape:
+-- ALU
+    aluOutputs = alu n (ctl_alu_a, ctl_alu_b, ctl_alu_c,ctl_Logic) x y cc -- adding Logic signal for part 2
+
+Control was edited with the new states:
+
+-- Control states
+      start = orw -- start on reset or last instruction state
+        [reset,
+         st_add, st_sub,
+         st_inv, st_and, st_or, st_xor, -- new logic ops
+
+states defined :
+-- adding control states for logic operators
+      dff_inv = dff (or2 (pRRR!!5) (and2 dff_inv io_DMA))
+      st_inv  = and2 dff_inv cpu
+      [..........]
+
+and added in the signals:
+
+ ctl_alu_b   = orw [st_instr_fet,st_load0,st_loadxi0,st_store0,st_lea0,
+                         st_jump0, st_jumpc00, st_jumpc10, st_jal0,st_loadxi3,st_or, st_xor] -- loadxi/ALU added
+      ctl_alu_c   = orw [st_instr_fet,st_load0,st_loadxi0,st_store0,st_lea0,
+                         st_jump0, st_jumpc00, st_jumpc10,
+                         st_sub,st_jumpc00,st_jal0,st_loadxi3,st_and, st_xor] -- loadxi/ALU added
+
+
+not sure if imissed something, debugging seemed to point to interference from my additions made to implement loadxi. unfortunately,
+i lacked time for a clean start to gest ALU integration only.
+
+
+
+
+
 

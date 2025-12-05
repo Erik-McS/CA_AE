@@ -1,0 +1,4359 @@
+Reading object file ../Programs/Sigma16/Core/Simple/testl.obj.txt
+
+--------------------------------------------------------------------------------
+Cycle 0.  getStoredInput 0 1 1 0 0 0 61696
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = f100
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0000  m_real_addr = 0000  m_data = f100  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 1.  getStoredInput 0 1 1 0 0 1 3
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0001  io_data = 0003
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0001  m_real_addr = 0001  m_data = 0003  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 2.  getStoredInput 0 1 1 0 0 2 61952
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0002  io_data = f200
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0002  m_real_addr = 0002  m_data = f200  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 3.  getStoredInput 0 1 1 0 0 3 5
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0003  io_data = 0005
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0003  m_real_addr = 0003  m_data = 0005  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 4.  getStoredInput 0 1 1 0 0 4 21266
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0004  io_data = 5312
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000Reading object file ../Programs/Sigma16/Core/Simple/testl.obj.txt
+
+--------------------------------------------------------------------------------
+Cycle 0.  getStoredInput 0 1 1 0 0 0 61696
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = f100
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0000  m_real_addr = 0000  m_data = f100  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 1.  getStoredInput 0 1 1 0 0 1 3
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0001  io_data = 0003
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0001  m_real_addr = 0001  m_data = 0003  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 2.  getStoredInput 0 1 1 0 0 2 61952
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0002  io_data = f200
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0002  m_real_addr = 0002  m_data = f200  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 3.  getStoredInput 0 1 1 0 0 3 5
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0003  io_data = 0005
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0003  m_real_addr = 0003  m_data = 0005  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 4.  getStoredInput 0 1 1 0 0 4 21266
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0004  io_data = 5312
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0004  m_real_addr = 0004  m_data = 5312  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 5.  getStoredInput 0 1 1 0 0 5 25618
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0005  io_data = 6412
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0005  m_real_addr = 0005  m_data = 6412  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 6.  getStoredInput 0 1 1 0 0 6 29970
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0006  io_data = 7512
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0006  m_real_addr = 0006  m_data = 7512  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 7.  getStoredInput 0 1 1 0 0 7 34322
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0007  io_data = 8612
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0007  m_real_addr = 0007  m_data = 8612  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 8.  getStoredInput 0 1 1 0 0 8 49152
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0008  io_data = c000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0008  m_real_addr = 0008  m_data = c000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 9.  Running
+
+System control
+  reset = 1  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = f100     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f100
+
+************************************************************************
+Reset: control algorithm starting
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 10.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0001  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = f100     q = 0001     r = 0001
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f100
+
+--------------------------------------------------------------------------------
+Cycle 11.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = f100    pc = 0001    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = f100     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f100
+
+--------------------------------------------------------------------------------
+Cycle 12.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 11      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 1    ctl_ad_ld = 1   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0001  y = 0000  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0002  ccnew = 0020  condcc = 0
+
+Datapath
+      ir = f100    pc = 0001    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0001     y = 0000
+       p = 0003     q = 0002     r = 0002
+      ma = 0001    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0001  m_real_addr = 0001  m_data = 0000  m_out =0003
+
+--------------------------------------------------------------------------------
+Cycle 13.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 11     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 1    ctl_rf_ld = 1  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 1   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0003  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0003  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = f100    pc = 0002    ad = 0003    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0003
+       p = 0003     q = 0003     r = 0003
+      ma = 0003    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0000  m_out =0005
+*** Fetched displacement = 0003
+Register file update: R1 := 0003
+
+************************************************************************
+Executed instruction:  lea  R1,0003[R0]
+R1 := 0003 was loaded in cycle 13
+Processor state:    pc = 0002  ir = f100  ad = 0003
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 14.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0002  y = 0000  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0003  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = f100    pc = 0002    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0002     y = 0000
+       p = f200     q = 0003     r = 0003
+      ma = 0002    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0002  m_real_addr = 0002  m_data = 0000  m_out =f200
+
+--------------------------------------------------------------------------------
+Cycle 15.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = f200    pc = 0003    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 6412     q = 0000     r = 0000
+      ma = 0005    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0005  m_real_addr = 0005  m_data = 0000  m_out =6412
+
+--------------------------------------------------------------------------------
+Cycle 16.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 11      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 1    ctl_ad_ld = 1   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0003  y = 0000  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0004  ccnew = 0020  condcc = 0
+
+Datapath
+      ir = f200    pc = 0003    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0003     y = 0000
+       p = 0005     q = 0004     r = 0004
+      ma = 0003    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0000  m_out =0005
+
+--------------------------------------------------------------------------------
+Cycle 17.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 11     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 1    ctl_rf_ld = 1  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 1   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0005  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0005  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = f200    pc = 0004    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0005
+       p = 0005     q = 0005     r = 0005
+      ma = 0005    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0005  m_real_addr = 0005  m_data = 0000  m_out =6412
+*** Fetched displacement = 0005
+Register file update: R2 := 0005
+
+************************************************************************
+Executed instruction:  lea  R2,0005[R0]
+R2 := 0005 was loaded in cycle 17
+Processor state:    pc = 0004  ir = f200  ad = 0005
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 18.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0004  y = 0000  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0005  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = f200    pc = 0004    ad = 6412    cc = 0000
+       a = 0000     b = 0000     x = 0004     y = 0000
+       p = 5312     q = 0005     r = 0005
+      ma = 0004    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0004  m_real_addr = 0004  m_data = 0000  m_out =5312
+
+--------------------------------------------------------------------------------
+Cycle 19.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 3
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 5312    pc = 0005    ad = 6412    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 20.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 1    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 1
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 3
+  ALU outputs:   r = ffff  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 5312    pc = 0005    ad = 6412    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = ffff     q = ffff     r = ffff
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+Register file update: R3 := ffff
+
+************************************************************************
+Executed instruction:  inv  R3,0005[R1]
+R3 := ffff was loaded in cycle 20
+Processor state:    pc = 0005  ir = 5312  ad = 6412
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 21.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0005  y = 0000  cc = 0004  ir_d = 3
+  ALU outputs:   r = 0006  ccnew = 0020  condcc = 0
+
+Datapath
+      ir = 5312    pc = 0005    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = 0005     y = 0000
+       p = 6412     q = 0006     r = 0006
+      ma = 0005    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 0005  m_real_addr = 0005  m_data = ffff  m_out =6412
+
+--------------------------------------------------------------------------------
+Cycle 22.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = ffff  y = 0000  cc = 0004  ir_d = 4
+  ALU outputs:   r = ffff  ccnew = 0010  condcc = 0
+
+Datapath
+      ir = 6412    pc = 0006    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = ffff     y = 0000
+       p = 0000     q = ffff     r = ffff
+      ma = 6412    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = ffff  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 23.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+Reading object file ../Programs/Sigma16/Core/Simple/testl.obj.txt
+
+--------------------------------------------------------------------------------
+Cycle 0.  getStoredInput 0 1 1 0 0 0 61696
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = f100
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0000  m_real_addr = 0000  m_data = f100  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 1.  getStoredInput 0 1 1 0 0 1 3
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0001  io_data = 0003
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0001  m_real_addr = 0001  m_data = 0003  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 2.  getStoredInput 0 1 1 0 0 2 61952
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0002  io_data = f200
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0002  m_real_addr = 0002  m_data = f200  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 3.  getStoredInput 0 1 1 0 0 3 5
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0003  io_data = 0005
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0003  m_real_addr = 0003  m_data = 0005  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 4.  getStoredInput 0 1 1 0 0 4 21266
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0004  io_data = 5312
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0004  m_real_addr = 0004  m_data = 5312  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 5.  getStoredInput 0 1 1 0 0 5 25618
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0005  io_data = 6412
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0005  m_real_addr = 0005  m_data = 6412  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 6.  getStoredInput 0 1 1 0 0 6 29970
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0006  io_data = 7512
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0006  m_real_addr = 0006  m_data = 7512  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 7.  getStoredInput 0 1 1 0 0 7 34322
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0007  io_data = 8612
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0007  m_real_addr = 0007  m_data = 8612  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 8.  getStoredInput 0 1 1 0 0 8 49152
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0008  io_data = c000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0008  m_real_addr = 0008  m_data = c000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 9.  Running
+
+System control
+  reset = 1  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = f100     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f100
+
+************************************************************************
+Reset: control algorithm starting
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 10.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0001  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = f100     q = 0001     r = 0001
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f100
+
+--------------------------------------------------------------------------------
+Cycle 11.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = f100    pc = 0001    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = f100     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f100
+
+--------------------------------------------------------------------------------
+Cycle 12.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 11      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 1    ctl_ad_ld = 1   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0001  y = 0000  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0002  ccnew = 0020  condcc = 0
+
+Datapath
+      ir = f100    pc = 0001    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0001     y = 0000
+       p = 0003     q = 0002     r = 0002
+      ma = 0001    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0001  m_real_addr = 0001  m_data = 0000  m_out =0003
+
+--------------------------------------------------------------------------------
+Cycle 13.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 11     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 1    ctl_rf_ld = 1  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 1   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0003  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0003  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = f100    pc = 0002    ad = 0003    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0003
+       p = 0003     q = 0003     r = 0003
+      ma = 0003    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0000  m_out =0005
+*** Fetched displacement = 0003
+Register file update: R1 := 0003
+
+************************************************************************
+Executed instruction:  lea  R1,0003[R0]
+R1 := 0003 was loaded in cycle 13
+Processor state:    pc = 0002  ir = f100  ad = 0003
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 14.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0002  y = 0000  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0003  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = f100    pc = 0002    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0002     y = 0000
+       p = f200     q = 0003     r = 0003
+      ma = 0002    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0002  m_real_addr = 0002  m_data = 0000  m_out =f200
+
+--------------------------------------------------------------------------------
+Cycle 15.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = f200    pc = 0003    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 6412     q = 0000     r = 0000
+      ma = 0005    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0005  m_real_addr = 0005  m_data = 0000  m_out =6412
+
+--------------------------------------------------------------------------------
+Cycle 16.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 11      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 1    ctl_ad_ld = 1   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0003  y = 0000  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0004  ccnew = 0020  condcc = 0
+
+Datapath
+      ir = f200    pc = 0003    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0003     y = 0000
+       p = 0005     q = 0004     r = 0004
+      ma = 0003    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0000  m_out =0005
+
+--------------------------------------------------------------------------------
+Cycle 17.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 11     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 1    ctl_rf_ld = 1  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 1   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0005  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0005  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = f200    pc = 0004    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0005
+       p = 0005     q = 0005     r = 0005
+      ma = 0005    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0005  m_real_addr = 0005  m_data = 0000  m_out =6412
+*** Fetched displacement = 0005
+Register file update: R2 := 0005
+
+************************************************************************
+Executed instruction:  lea  R2,0005[R0]
+R2 := 0005 was loaded in cycle 17
+Processor state:    pc = 0004  ir = f200  ad = 0005
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 18.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0004  y = 0000  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0005  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = f200    pc = 0004    ad = 6412    cc = 0000
+       a = 0000     b = 0000     x = 0004     y = 0000
+       p = 5312     q = 0005     r = 0005
+      ma = 0004    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0004  m_real_addr = 0004  m_data = 0000  m_out =5312
+
+--------------------------------------------------------------------------------
+Cycle 19.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 3
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 5312    pc = 0005    ad = 6412    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 20.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 1    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 1
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 3
+  ALU outputs:   r = ffff  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 5312    pc = 0005    ad = 6412    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = ffff     q = ffff     r = ffff
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+Register file update: R3 := ffff
+
+************************************************************************
+Executed instruction:  inv  R3,0005[R1]
+R3 := ffff was loaded in cycle 20
+Processor state:    pc = 0005  ir = 5312  ad = 6412
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 21.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0005  y = 0000  cc = 0004  ir_d = 3
+  ALU outputs:   r = 0006  ccnew = 0020  condcc = 0
+
+Datapath
+      ir = 5312    pc = 0005    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = 0005     y = 0000
+       p = 6412     q = 0006     r = 0006
+      ma = 0005    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 0005  m_real_addr = 0005  m_data = ffff  m_out =6412
+
+--------------------------------------------------------------------------------
+Cycle 22.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = ffff  y = 0000  cc = 0004  ir_d = 4
+  ALU outputs:   r = ffff  ccnew = 0010  condcc = 0
+
+Datapath
+      ir = 6412    pc = 0006    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = ffff     y = 0000
+       p = 0000     q = ffff     r = ffff
+      ma = 6412    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = ffff  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 23.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 1    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 1
+
+ALU
+  ALU inputs:   operation = 000  x = ffff  y = 0000  cc = 0004  ir_d = 4
+  ALU outputs:   r = 0000  ccnew = 0010  condcc = 0
+
+Datapath
+      ir = 6412    pc = 0006    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = ffff     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = ffff  m_out =0000
+Register file update: R4 := 0000
+
+************************************************************************
+Executed instruction:  and  R4,0005[R1]
+R4 := 0000 was loaded in cycle 23
+Processor state:    pc = 0006  ir = 6412  ad = 6412
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 24.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0006  y = 0000  cc = 0010  ir_d = 4
+  ALU outputs:   r = 0007  ccnew = 0003  condcc = 1
+
+Datapath
+      ir = 6412    pc = 0006    ad = 6412    cc = 0010
+       a = 0000     b = 0000     x = 0006     y = 0000
+       p = 7512     q = 0007     r = 0007
+      ma = 0006    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0006  m_real_addr = 0006  m_data = 0000  m_out =7512
+
+--------------------------------------------------------------------------------
+Cycle 25.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0010  ir_d = 5
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 7512    pc = 0007    ad = 6412    cc = 0010
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 26.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 1    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 1
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0010  ir_d = 5
+  ALU outputs:   r = ffff  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 7512    pc = 0007    ad = 6412    cc = 0010
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = ffff     q = ffff     r = ffff
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+Register file update: R5 := ffff
+
+************************************************************************
+Executed instruction:  or  R5,0005[R1]
+R5 := ffff was loaded in cycle 26
+Processor state:    pc = 0007  ir = 7512  ad = 6412
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 27.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0007  y = 0000  cc = 0004  ir_d = 5
+  ALU outputs:   r = 0008  ccnew = 0020  condcc = 0
+
+Datapath
+      ir = 7512    pc = 0007    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = 0007     y = 0000
+       p = 8612     q = 0008     r = 0008
+      ma = 0007    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 0007  m_real_addr = 0007  m_data = ffff  m_out =8612
+
+--------------------------------------------------------------------------------
+Cycle 28.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = ffff  y = 0000  cc = 0004  ir_d = 6
+  ALU outputs:   r = ffff  ccnew = 0010  condcc = 0
+
+Datapath
+      ir = 8612    pc = 0008    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = ffff     y = 0000
+       p = 0000     q = ffff     r = ffff
+      ma = 6412    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412 
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx m_data = ffff  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 29.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 1    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 1
+
+ALU
+  ALU inputs:   operation = 000  x = ffff  y = 00
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx00  cc = 0004  ir_d = 6
+  ALU outputs:   r = 0000  ccnew = 0010  condcc = 0
+
+Datapath
+      ir = 8612    pc = 0008    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = ffff     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = ffff  m_out =0000
+Register file update: R6 := 0000
+
+************************************************************************
+Executed instruction:  xor  R6,0005[R1]
+R6 := 0000 was loaded in cycle 29
+Processor state:    pc = 0008  ir = 8612  ad = 6412
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 30.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0008  y = 0000  cc = 0010  ir_d = 6
+  ALU outputs:   r = 0009  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = 8612    pc = 0008    ad = 6412    cc = 0010
+       a = 0000     b = 0000     x = 0008     y = 0000
+       p = c000     q = 0009     r = 0009
+      ma = 0008    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0008  m_real_addr = 0008  m_data = 0000  m_out =c000
+
+--------------------------------------------------------------------------------
+Cycle 31.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0010  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = c000    pc = 0009    ad = 6412    cc = 0010
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 32.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 11
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0010  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = c000    pc = 0009    ad = 6412    cc = 0010
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+************************************************************************
+Executed instruction:  trap  R0,R0,R0
+Processor state:    pc = 0009  ir = c000  ad = 6412
+************************************************************************
+
+System simulation driver is handling a trap request
+Executing trap R0,R0,R0
+*** Cycle 33: I/O fetch R0 = 0000
+*** Cycle 34: I/O fetch R0 = 0000
+*** Cycle 35: I/O fetch R0 = 0000
+trap arg d = 0000
+trap arg a = 0000
+trap arg b = 0000
+Trap arg d = 0 so this is a Halt request
+
+************************************************************************
+System trap request:  Halt
+Processor has halted
+************************************************************************
+
+trap request finished
+*** Cycle 36: I/O fetch R0 = 0000
+*** Cycle 37: I/O fetch R1 = 0000
+*** Cycle 38: I/O fetch R2 = 0000
+*** Cycle 39: I/O fetch R3 = 0000
+*** Cycle 40: I/O fetch R4 = 0000
+*** Cycle 41: I/O fetch R5 = 0000
+*** Cycle 42: I/O fetch R6 = 0000
+*** Cycle 43: I/O fetch R7 = 0000
+*** Cycle 44: I/O fetch R8 = 0000
+*** Cycle 45: I/O fetch R9 = 0000
+*** Cycle 46: I/O fetch R10 = 0000
+*** Cycle 47: I/O fetch R11 = 0000
+*** Cycle 48: I/O fetch R12 = 0000
+*** Cycle 49: I/O fetch R13 = 0000
+*** Cycle 50: I/O fetch R14 = 0000
+*** Cycle 51: I/O fetch R15 = 0010
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 1    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 1
+
+ALU
+  ALU inputs:   operation = 000  x = ffff  y = 0000  cc = 0004  ir_d = 4
+  ALU outputs:   r = 0000  ccnew = 0010  condcc = 0
+
+Datapath
+      ir = 6412    pc = 0006    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = ffff     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = ffff  m_out =0000
+Register file update: R4 := 0000
+
+************************************************************************
+Executed instruction:  and  R4,0005[R1]
+R4 := 0000 was loaded in cycle 23
+Processor state:    pc = 0006  ir = 6412  ad = 6412
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 24.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0006  y = 0000  cc = 0010  ir_d = 4
+  ALU outputs:   r = 0007  ccnew = 0003  condcc = 1
+
+Datapath
+      ir = 6412    pc = 0006    ad = 6412    cc = 0010
+       a = 0000     b = 0000     x = 0006     y = 0000
+       p = 7512     q = 0007     r = 0007
+      ma = 0006    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0006  m_real_addr = 0006  m_data = 0000  m_out =7512
+
+--------------------------------------------------------------------------------
+Cycle 25.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0010  ir_d = 5
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 7512    pc = 0007    ad = 6412    cc = 0010
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 26.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 1    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 1
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0010  ir_d = 5
+  ALU outputs:   r = ffff  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 7512    pc = 0007    ad = 6412    cc = 0010
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = ffff     q = ffff     r = ffff
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+Register file update: R5 := ffff
+
+************************************************************************
+Executed instruction:  or  R5,0005[R1]
+R5 := ffff was loaded in cycle 26
+Processor state:    pc = 0007  ir = 7512  ad = 6412
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 27.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0007  y = 0000  cc = 0004  ir_d = 5
+  ALU outputs:   r = 0008  ccnew = 0020  condcc = 0
+
+Datapath
+      ir = 7512    pc = 0007    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = 0007     y = 0000
+       p = 8612     q = 0008     r = 0008
+      ma = 0007    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 0007  m_real_addr = 0007  m_data = ffff  m_out =8612
+
+--------------------------------------------------------------------------------
+Cycle 28.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = ffff  y = 0000  cc = 0004  ir_d = 6
+  ALU outputs:   r = ffff  ccnew = 0010  condcc = 0
+
+Datapath
+      ir = 8612    pc = 0008    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = ffff     y = 0000
+       p = 0000     q = ffff     r = ffff
+      ma = 6412    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = ffff  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 29.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 1    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 1
+
+ALU
+  ALU inputs:   operation = 000  x = ffff  y = 0000  cc = 0004  ir_d = 6
+  ALU outputs:   r = 0000  ccnew = 0010  condcc = 0
+
+Datapath
+      ir = 8612    pc = 0008    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = ffff     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = ffff  m_out =0000
+Register file update: R6 := 0000
+
+************************************************************************
+Executed instruction:  xor  R6,0005[R1]
+R6 := 0000 was loaded in cycle 29
+Processor state:    pc = 0008  ir = 8612  ad = 6412
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 30.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0008  y = 0000  cc = 0010  ir_d = 6
+  ALU outputs:   r = 0009  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = 8612    pc = 0008    ad = 6412    cc = 0010
+       a = 0000     b = 0000     x = 0008     y = 0000
+       p = c000     q = 0009     r = 0009
+      ma = 0008    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0008  m_real_addr = 0008  m_data = 0000  m_out =c000
+
+--------------------------------------------------------------------------------
+Cycle 31.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0010  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = c000    pc = 0009    ad = 6412    cc = 0010
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 32.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 11
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0010  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = c000    pc = 0009    ad = 6412    cc = 0010
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+************************************************************************
+Executed instruction:  trap  R0,R0,R0
+Processor state:    pc = 0009  ir = c000  ad = 6412
+************************************************************************
+
+System simulation driver is handling a trap request
+Executing trap R0,R0,R0
+*** Cycle 33: I/O fetch R0 = 0000
+*** Cycle 34: I/O fetch R0 = 0000
+*** Cycle 35: I/O fetch R0 = 0000
+trap arg d = 0000
+trap arg a = 0000
+trap arg b = 0000
+Trap arg d = 0 so this is a Halt request
+
+************************************************************************
+System trap request:  Halt
+Processor has halted
+************************************************************************
+
+trap request finished
+*** Cycle 36: I/O fetch R0 = 0000
+*** Cycle 37: I/O fetch R1 = 0000
+*** Cycle 38: I/O fetch R2 = 0000
+*** Cycle 39: I/O fetch R3 = 0000
+*** Cycle 40: I/O fetch R4 = 0000
+*** Cycle 41: I/O fetch R5 = 0000
+*** Cycle 42: I/O fetch R6 = 0000
+*** Cycle 43: I/O fetch R7 = 0000
+*** Cycle 44: I/O fetch R8 = 0000
+*** Cycle 45: I/O fetch R9 = 0000
+*** Cycle 46: I/O fetch R10 = 0000
+*** Cycle 47: I/O fetch R11 = 0000
+*** Cycle 48: I/O fetch R12 = 0000
+*** Cycle 49: I/O fetch R13 = 0000
+*** Cycle 50: I/O fetch R14 = 0000
+*** Cycle 51: I/O fetch R15 = 0010
+
+
+Memory
+    m_sto = 1  m_addr = 0004  m_real_addr = 0004  m_data = 5312  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 5.  getStoredInput 0 1 1 0 0 5 25618
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0005  io_data = 6412
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0005  m_real_addr = 0005  m_data = 6412  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 6.  getStoredInput 0 1 1 0 0 6 29970
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0006  io_data = 7512
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0006  m_real_addr = 0006  m_data = 7512  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 7.  getStoredInput 0 1 1 0 0 7 34322
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0007  io_data = 8612
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0007  m_real_addr = 0007  m_data = 8612  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 8.  getStoredInput 0 1 1 0 0 8 49152
+Booting
+
+System control
+  reset = 0  cpu = 0  ctl_start = 0
+
+Input/Output
+  io_DMA = 1  io_memStore = 1  io_memFetch = 0  io_regFetch = 0
+  io_address = 0008  io_data = c000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 1  m_addr = 0008  m_real_addr = 0008  m_data = c000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 9.  Running
+
+System control
+  reset = 1  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = f100     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f100
+
+************************************************************************
+Reset: control algorithm starting
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 10.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0000  y = 0000  cc = 0000  ir_d = 0
+  ALU outputs:   r = 0001  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = 0000    pc = 0000    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = f100     q = 0001     r = 0001
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f100
+
+--------------------------------------------------------------------------------
+Cycle 11.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = f100    pc = 0001    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = f100     q = 0000     r = 0000
+      ma = 0000    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0000  m_real_addr = 0000  m_data = 0000  m_out =f100
+
+--------------------------------------------------------------------------------
+Cycle 12.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 11      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 1    ctl_ad_ld = 1   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0001  y = 0000  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0002  ccnew = 0020  condcc = 0
+
+Datapath
+      ir = f100    pc = 0001    ad = 0000    cc = 0000
+       a = 0000     b = 0000     x = 0001     y = 0000
+       p = 0003     q = 0002     r = 0002
+      ma = 0001    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0001  m_real_addr = 0001  m_data = 0000  m_out =0003
+
+--------------------------------------------------------------------------------
+Cycle 13.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 11     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 1    ctl_rf_ld = 1  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 1   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0003  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0003  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = f100    pc = 0002    ad = 0003    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0003
+       p = 0003     q = 0003     r = 0003
+      ma = 0003    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0000  m_out =0005
+*** Fetched displacement = 0003
+Register file update: R1 := 0003
+
+************************************************************************
+Executed instruction:  lea  R1,0003[R0]
+R1 := 0003 was loaded in cycle 13
+Processor state:    pc = 0002  ir = f100  ad = 0003
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 14.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0002  y = 0000  cc = 0000  ir_d = 1
+  ALU outputs:   r = 0003  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = f100    pc = 0002    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0002     y = 0000
+       p = f200     q = 0003     r = 0003
+      ma = 0002    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0002  m_real_addr = 0002  m_data = 0000  m_out =f200
+
+--------------------------------------------------------------------------------
+Cycle 15.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = f200    pc = 0003    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 6412     q = 0000     r = 0000
+      ma = 0005    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0005  m_real_addr = 0005  m_data = 0000  m_out =6412
+
+--------------------------------------------------------------------------------
+Cycle 16.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 11      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 1    ctl_ad_ld = 1   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0003  y = 0000  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0004  ccnew = 0020  condcc = 0
+
+Datapath
+      ir = f200    pc = 0003    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0003     y = 0000
+       p = 0005     q = 0004     r = 0004
+      ma = 0003    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0003  m_real_addr = 0003  m_data = 0000  m_out =0005
+
+--------------------------------------------------------------------------------
+Cycle 17.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 11     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 1    ctl_rf_ld = 1  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 1   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0005  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0005  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = f200    pc = 0004    ad = 0005    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0005
+       p = 0005     q = 0005     r = 0005
+      ma = 0005    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0005  m_real_addr = 0005  m_data = 0000  m_out =6412
+*** Fetched displacement = 0005
+Register file update: R2 := 0005
+
+************************************************************************
+Executed instruction:  lea  R2,0005[R0]
+R2 := 0005 was loaded in cycle 17
+Processor state:    pc = 0004  ir = f200  ad = 0005
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 18.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0004  y = 0000  cc = 0000  ir_d = 2
+  ALU outputs:   r = 0005  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = f200    pc = 0004    ad = 6412    cc = 0000
+       a = 0000     b = 0000     x = 0004     y = 0000
+       p = 5312     q = 0005     r = 0005
+      ma = 0004    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0004  m_real_addr = 0004  m_data = 0000  m_out =5312
+
+--------------------------------------------------------------------------------
+Cycle 19.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 3
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 5312    pc = 0005    ad = 6412    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 20.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 1    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 1
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0000  ir_d = 3
+  ALU outputs:   r = ffff  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 5312    pc = 0005    ad = 6412    cc = 0000
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = ffff     q = ffff     r = ffff
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+Register file update: R3 := ffff
+
+************************************************************************
+Executed instruction:  inv  R3,0005[R1]
+R3 := ffff was loaded in cycle 20
+Processor state:    pc = 0005  ir = 5312  ad = 6412
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 21.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0005  y = 0000  cc = 0004  ir_d = 3
+  ALU outputs:   r = 0006  ccnew = 0020  condcc = 0
+
+Datapath
+      ir = 5312    pc = 0005    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = 0005     y = 0000
+       p = 6412     q = 0006     r = 0006
+      ma = 0005    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 0005  m_real_addr = 0005  m_data = ffff  m_out =6412
+
+--------------------------------------------------------------------------------
+Cycle 22.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = ffff  y = 0000  cc = 0004  ir_d = 4
+  ALU outputs:   r = ffff  ccnew = 0010  condcc = 0
+
+Datapath
+      ir = 6412    pc = 0006    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = ffff     y = 0000
+       p = 0000     q = ffff     r = ffff
+      ma = 6412    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = ffff  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 23.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 1     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 1    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 1
+
+ALU
+  ALU inputs:   operation = 001  x = ffff  y = 0000  cc = 0004  ir_d = 4
+  ALU outputs:   r = 0000  ccnew = 00d0  condcc = 0
+
+Datapath
+      ir = 6412    pc = 0006    ad = 6412    cc = 0004
+       a = ffff     b = 0000     x = ffff     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = ffff
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = ffff  m_out =0000
+Register file update: R4 := 0000
+
+************************************************************************
+Executed instruction:  and  R4,0005[R1]
+R4 := 0000 was loaded in cycle 23
+Processor state:    pc = 0006  ir = 6412  ad = 6412
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 24.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0006  y = 0000  cc = 00d0  ir_d = 4
+  ALU outputs:   r = 0007  ccnew = 0003  condcc = 1
+
+Datapath
+      ir = 6412    pc = 0006    ad = 6412    cc = 00d0
+       a = 0000     b = 0000     x = 0006     y = 0000
+       p = 7512     q = 0007     r = 0007
+      ma = 0006    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0006  m_real_addr = 0006  m_data = 0000  m_out =7512
+
+--------------------------------------------------------------------------------
+Cycle 25.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 00d0  ir_d = 5
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 0
+
+Datapath
+      ir = 7512    pc = 0007    ad = 6412    cc = 00d0
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 26.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 1    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 1
+
+ALU
+  ALU inputs:   operation = 010  x = 0000  y = 0000  cc = 00d0  ir_d = 5
+  ALU outputs:   r = 0000  ccnew = 00c4  condcc = 0
+
+Datapath
+      ir = 7512    pc = 0007    ad = 6412    cc = 00d0
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+Register file update: R5 := 0000
+
+************************************************************************
+Executed instruction:  or  R5,0005[R1]
+R5 := 0000 was loaded in cycle 26
+Processor state:    pc = 0007  ir = 7512  ad = 6412
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 27.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0007  y = 0000  cc = 00c4  ir_d = 5
+  ALU outputs:   r = 0008  ccnew = 0020  condcc = 0
+
+Datapath
+      ir = 7512    pc = 0007    ad = 6412    cc = 00c4
+       a = 0000     b = 0000     x = 0007     y = 0000
+       p = 8612     q = 0008     r = 0008
+      ma = 0007    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0007  m_real_addr = 0007  m_data = 0000  m_out =8612
+
+--------------------------------------------------------------------------------
+Cycle 28.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 00c4  ir_d = 6
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 1
+
+Datapath
+      ir = 8612    pc = 0008    ad = 6412    cc = 00c4
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 29.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 1  ctl_rf_ldcc = 1    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 1    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 1
+
+ALU
+  ALU inputs:   operation = 011  x = 0000  y = 0000  cc = 00c4  ir_d = 6
+  ALU outputs:   r = 0000  ccnew = 0003  condcc = 1
+
+Datapath
+      ir = 8612    pc = 0008    ad = 6412    cc = 00c4
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+Register file update: R6 := 0000
+
+************************************************************************
+Executed instruction:  xor  R6,0005[R1]
+R6 := 0000 was loaded in cycle 29
+Processor state:    pc = 0008  ir = 8612  ad = 6412
+************************************************************************
+
+--------------------------------------------------------------------------------
+Cycle 30.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 11  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 1    ctl_alu_c = 1     ctl_x_pc = 1
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 1    ctl_pc_ld = 1    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 1      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 011  x = 0008  y = 0000  cc = 0003  ir_d = 6
+  ALU outputs:   r = 0009  ccnew = 0003  condcc = 0
+
+Datapath
+      ir = 8612    pc = 0008    ad = 6412    cc = 0003
+       a = 0000     b = 0000     x = 0008     y = 0000
+       p = c000     q = 0009     r = 0009
+      ma = 0008    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 0008  m_real_addr = 0008  m_data = 0000  m_out =c000
+
+--------------------------------------------------------------------------------
+Cycle 31.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 0
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 11       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 00
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0003  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 1
+
+Datapath
+      ir = c000    pc = 0009    ad = 6412    cc = 0003
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+--------------------------------------------------------------------------------
+Cycle 32.  Running
+
+System control
+  reset = 0  cpu = 1  ctl_start = 1
+
+Input/Output
+  io_DMA = 0  io_memStore = 0  io_memFetch = 0  io_regFetch = 0
+  io_address = 0000  io_data = 0000
+
+Control state
+   st_instr_fet = 00  st_dispatch = 00       st_add = 00       st_sub = 00
+        st_mul0 = 00      st_div0 = 00       st_cmp = 00     st_trap0 = 11
+        st_lea0 = 00      st_lea1 = 00     st_load0 = 00
+       st_load1 = 00     st_load2 = 00    st_store0 = 00    st_store1 = 00
+      st_store2 = 00     st_jump0 = 00     st_jump1 = 00     st_jump2 = 00
+     st_jumpc00 = 00   st_jumpc01 = 00   st_jumpc02 = 00   st_jumpc10 = 00
+     st_jumpc11 = 00   st_jumpc12 = 00      st_jal0 = 00      st_jal1 = 00
+        st_jal2 = 00   st_loadxi0 = 00   st_loadxi1 = 00   st_loadxi2 = 00   st_loadxi3 = 00
+  
+
+Control signals
+      ctl_alu_a = 0    ctl_alu_b = 0    ctl_alu_c = 0     ctl_x_pc = 0
+       ctl_y_ad = 0    ctl_rf_ld = 0  ctl_rf_ldcc = 0    ctl_rf_pc = 0
+      ctl_pc_ld = 0    ctl_pc_ad = 0   ctl_rf_alu = 0    ctl_rf_sd = 0
+      ctl_ir_ld = 0    ctl_pc_ld = 0    ctl_ad_ld = 0   ctl_ad_alu = 0
+      ctl_ma_pc = 0      ctl_sto = 0   ctl_ld_idx = 0   ctl_Logic = 0
+
+ALU
+  ALU inputs:   operation = 000  x = 0000  y = 0000  cc = 0003  ir_d = 0
+  ALU outputs:   r = 0000  ccnew = 0004  condcc = 1
+
+Datapath
+      ir = c000    pc = 0009    ad = 6412    cc = 0003
+       a = 0000     b = 0000     x = 0000     y = 0000
+       p = 0000     q = 0000     r = 0000
+      ma = 6412    md = 0000
+
+Memory
+    m_sto = 0  m_addr = 6412  m_real_addr = 6412  m_data = 0000  m_out =0000
+
+************************************************************************
+Executed instruction:  trap  R0,R0,R0
+Processor state:    pc = 0009  ir = c000  ad = 6412
+************************************************************************
+
+System simulation driver is handling a trap request
+Executing trap R0,R0,R0
+*** Cycle 33: I/O fetch R0 = 0000
+*** Cycle 34: I/O fetch R0 = 0000
+*** Cycle 35: I/O fetch R0 = 0000
+trap arg d = 0000
+trap arg a = 0000
+trap arg b = 0000
+Trap arg d = 0 so this is a Halt request
+
+************************************************************************
+System trap request:  Halt
+Processor has halted
+************************************************************************
+
+trap request finished
+*** Cycle 36: I/O fetch R0 = 0000
+*** Cycle 37: I/O fetch R1 = 0000
+*** Cycle 38: I/O fetch R2 = 0000
+*** Cycle 39: I/O fetch R3 = 0000
+*** Cycle 40: I/O fetch R4 = 0000
+*** Cycle 41: I/O fetch R5 = 0000
+*** Cycle 42: I/O fetch R6 = 0000
+*** Cycle 43: I/O fetch R7 = 0000
+*** Cycle 44: I/O fetch R8 = 0000
+*** Cycle 45: I/O fetch R9 = 0000
+*** Cycle 46: I/O fetch R10 = 0000
+*** Cycle 47: I/O fetch R11 = 0000
+*** Cycle 48: I/O fetch R12 = 0000
+*** Cycle 49: I/O fetch R13 = 0000
+*** Cycle 50: I/O fetch R14 = 0000
+*** Cycle 51: I/O fetch R15 = 0003
