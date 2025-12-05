@@ -136,9 +136,10 @@ alu n (alua,alub,aluc, cLogic) x y cc = (result, ccnew)
     -- 4-way word mux using two select bits
     mux4w :: Bit a => (a,a) -> [a] -> [a] -> [a] -> [a] -> [a]
     mux4w (s1,s0) w0 w1 w2 w3 =
-        let t0 = mux1w s0 w0 w1  -- if s0=0 pick w0 else w1
-            t1 = mux1w s0 w2 w3  -- if s0=0 pick w2 else w3
-        in  mux1w s1 t0 t1       -- if s1=0 pick t0 else t1
+        let t0 = mux1w s0 w0 w1  
+            t1 = mux1w s0 w2 w3  
+        in  mux1w s1 t0 t1       
+
     --   alub  aluc   Operation
 --   -------------------------
 --    0   0   r_inv     (bitwise NOT x)
